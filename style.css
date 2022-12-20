@@ -26,7 +26,7 @@ main .city {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    background-color: #f3f3f3;
+    background-color: #eaeaea;
     text-align: center;
     padding: 0.3rem;
 }
@@ -42,13 +42,35 @@ main .city i {
 /*Explorer*/
 .explore {
     text-align: center;
+    background-color: #f8f7f7;
 }
 
 .explore h2 {
-    margin-top: 2rem;
+    margin-top: 0rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     font-size: 1.7rem;
 }
 
 .explore p {
     font-size: 1.2rem;
+    color: gray;
+}
+
+.explore button {
+   color: white;
+   font-weight: 300;
+   font-size: 1rem;
+   padding: 1rem 2rem;
+   border: none;
+   border-radius: 2rem;
+   box-shadow: 2px 1px 16px -3px #000;
+   background-image: linear-gradient(to top, #9356DC , #FF79DA );
+   margin-top: 1rem;
+   margin-bottom: 4rem;
+}
+
+.explore button:hover {
+    transform: scale(1.02);
+    opacity: 0.8;
 }
