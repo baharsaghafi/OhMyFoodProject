@@ -16,7 +16,7 @@ header {
     font-family: 'Shrikhand', cursive;
     text-align: center;
     box-shadow: 0px 0px 0.5rem gray;
-    padding: 0.3rem;
+    padding: 0.2rem;
     margin: 0;
     position: relative;
 }
@@ -28,9 +28,27 @@ main .city {
     gap: 1rem;
     background-color: #f3f3f3;
     text-align: center;
-    padding: 0.5rem;
+    padding: 0.3rem;
 }
 
-main.city i {
-    font-size: 1.5rem;
+main .city h2 {
+    font-size: 1.3rem;
+}
+
+main .city i {
+    font-size: 1rem;
+}
+
+/*Explorer*/
+.explore {
+    text-align: center;
+}
+
+.explore h2 {
+    margin-top: 2rem;
+    font-size: 1.7rem;
+}
+
+.explore p {
+    font-size: 1.2rem;
 }
