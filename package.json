@@ -1,0 +1,23 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "my openclassroom project two",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baharsaghafi/OhMyFoodProject.git"
+  },
+  "author": "Bahar Saghafi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baharsaghafi/OhMyFoodProject/issues"
+  },
+  "homepage": "https://github.com/baharsaghafi/OhMyFoodProject#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.57.1"
+  }
+}
