@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+
 *,
 ::before,
 ::after {
@@ -7,71 +8,83 @@
 }
 
 body {
-  margin: 0px;
-  font-family: "Roboto" sans-serif;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
-  box-shadow: 0px 0px 0.5rem gray;
-  padding: 0.2rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  padding: 0.3rem;
   margin: 0;
   position: relative;
 }
 
-main .city {
+.city {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  background-color: #eaeaea;
+  background-color: #ebebeb;
   text-align: center;
-  padding: 0.3rem;
+  padding: 1rem 2rem;
 }
-
-main .city h2 {
-  font-size: 1.3rem;
+.city i {
+  font-size: 1.1rem;
 }
-
-main .city i {
+.city h2 {
   font-size: 1rem;
 }
 
-/*Explorer*/
 .explore {
   text-align: center;
-  background-color: #f8f7f7;
+  margin: 0rem;
+  background-color: #f7f7f7;
+  
 }
-
 .explore h2 {
-  margin-top: 0rem;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-top: 3rem;
 }
-
 .explore p {
-  font-size: 1.2rem;
-  color: gray;
+  font-size: 1rem;
+  color: #7e7e7e;
+  padding-bottom: 1rem;
 }
-
 .explore button {
   color: white;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 1rem 2rem;
   border: none;
   border-radius: 2rem;
-  box-shadow: 2px 1px 16px -3px #000;
-  background-image: linear-gradient(to top, #9356DC, #FF79DA);
-  margin-top: 1rem;
-  margin-bottom: 4rem;
+  transition: transform 200ms;
+  margin: 2rem 0;
+  cursor: pointer;
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  font-size: 1rem;
 }
-
 .explore button:hover {
   transform: scale(1.02);
-  opacity: 0.8;
+  opacity: 0.9;
 }
-
-/*# sourceMappingURL=style.css.map */
