@@ -106,6 +106,10 @@ header {
   font-size: 1rem;
 }
 
+.body {
+  background-color: #9e1a1a;
+}
+
 .menu {
   counter-reset: steps;
   margin-bottom: 2rem;

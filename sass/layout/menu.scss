@@ -1,9 +1,17 @@
+@import "../utility/zoom.scss";
+@use "../utility/zoom1.scss";
+@use "../utility/zoom2.scss";
+
+body {
+    background-color: $red;
+}
+
 .menu {
     & ol {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
-        @media (max-width: 1000px) {
+        @media (max-width: 800px) {
             flex-direction: column;
         }
     }
@@ -16,7 +24,10 @@
         border-radius: 1rem;
         margin-right: 1.5rem;
         font-weight: 550;
-        box-shadow: 2px 2px 10px -3px #a8a7a7;
+        @include base-shadow;
+        &:hover {
+            @include zoom;
+        }    
     }
     & i.fas {
         margin-left: 1rem;
