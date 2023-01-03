@@ -1,12 +1,8 @@
-@import "../utility/zoom.scss";
-@use "../utility/zoom1.scss";
-@use "../utility/zoom2.scss";
-
-body {
-    background-color: $red;
-}
+@use "../utility/box-shadow.scss";
+@use "../utility/zoom.scss";
 
 .menu {
+    counter-reset: steps;
     & ol {
         display: flex;
         flex-wrap: wrap;
@@ -24,9 +20,9 @@ body {
         border-radius: 1rem;
         margin-right: 1.5rem;
         font-weight: 550;
-        @include base-shadow;
+        @include base-shadow.base-shadow;
         &:hover {
-            @include zoom;
+            @include zoom.transform-zoom;
         }    
     }
     & i.fas {
