@@ -7,13 +7,20 @@
     counter-reset: steps;
     & ol {
         display: flex;
-        flex-wrap: wrap;
         gap: 1rem;
         @media (max-width: 800px) {
             flex-direction: column;
         }
     }
     & li {
+        &::before {
+            content: counter(steps);
+            counter-increment: steps;
+            color: white;
+            background-color: purple;
+            padding: 0.5rem;
+            border-radius: 50%;
+        }    
         background-color: #f6f6f6;
         cursor: pointer;
         padding: 1rem 2rem;

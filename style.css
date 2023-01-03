@@ -66,10 +66,13 @@ header {
   font-size: 1rem;
 }
 
+.menu {
+  counter-reset: steps;
+  margin-bottom: 2rem;
+}
 .menu ol {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
 }
 @media (max-width: 1000px) {
   .menu ol {
@@ -77,18 +80,41 @@ header {
   }
 }
 .menu li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
   background-color: #f6f6f6;
-  cursor: pointer;
-  padding: 1rem 2rem;
-  border: 1px solid red;
+  padding: 1.5rem 2rem;
   flex-grow: 1;
   border-radius: 1rem;
-  margin-right: 1.5rem;
-  font-weight: 550;
-  box-shadow: 2px 2px 10px -3px #a8a7a7;
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
-.menu i.fas {
-  margin-left: 1rem;
+.menu li::before {
+  content: counter(steps);
+  counter-increment: steps;
+  color: white;
+  background-color: #9356dc;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -1rem;
+  transform: translateY(-50%);
+}
+.menu li:hover {
+  transform: scale(1.02);
+  background-color: #f2eafb;
+}
+.menu li:hover i::before {
+  color: #9356dc;
+}
+.menu li i.fas {
+  margin-right: 1rem;
+  color: #7e7e7e;
   font-size: 1.5rem;
 }
 
