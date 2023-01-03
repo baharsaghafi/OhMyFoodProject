@@ -1,5 +1,7 @@
 @use "../utility/box-shadow.scss";
 @use "../utility/zoom.scss";
+@use "../utility/mixins";
+
 
 .menu {
     counter-reset: steps;
@@ -20,7 +22,7 @@
         border-radius: 1rem;
         margin-right: 1.5rem;
         font-weight: 550;
-        @include base-shadow.base-shadow;
+        @include box-shadow.base-shadow;
         &:hover {
             @include zoom.transform-zoom;
         }    
