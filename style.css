@@ -19,35 +19,9 @@ header {
   font-family: "Shrikhand", cursive;
   text-align: center;
   box-shadow: 0px 0px 0.5rem gray;
-  padding: 0.2rem;
+  padding: 0.3rem;
   margin: 0;
   position: relative;
-}
-
-.explore {
-  text-align: center;
-  margin: 2rem;
-}
-.explore h2 {
-  font-size: 1.5rem;
-  margin: 1rem;
-}
-.explore p {
-  font-size: 1rem;
-}
-.explore button {
-  font-size: 1rem;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 2rem;
-  box-shadow: 2px 1px 8px -2px black;
-  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  transition: transform 200ms;
-  font-size: 1rem;
-}
-.explore button:hover {
-  transform: scale(1.02);
-  opacity: 0.9;
 }
 
 .location {
@@ -64,6 +38,36 @@ header {
 }
 .location h2 {
   font-size: 1rem;
+}
+
+.explore {
+  text-align: center;
+  margin: 2rem;
+}
+.explore h2 {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+.explore p {
+  font-size: 1rem;
+}
+.explore button {
+  color: white;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  transition: transform 200ms;
+  margin-top: 1rem;
+  cursor: pointer;
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  font-size: 1rem;
+}
+.explore button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
 }
 
 .menu {

@@ -1,42 +1,53 @@
-@use "../utility/box-shadow.scss";
-@use "../utility/zoom.scss";
-@use "../utility/mixins";
-
+@use "../utility/mixins.scss";
+@use "../utility/var.scss";
+@use "../utility/colors.scss";
 
 .menu {
     counter-reset: steps;
+    margin-bottom: 2rem;
     & ol {
-        display: flex;
-        gap: 1rem;
-        @media (max-width: 800px) {
-            flex-direction: column;
-        }
+      display: flex;
+      gap: 2rem;
+      @media (max-width: var.$breakpoint) {
+        flex-direction: column;
+      }
     }
     & li {
-        &::before {
-            content: counter(steps);
-            counter-increment: steps;
-            color: white;
-            background-color: purple;
-            padding: 0.5rem;
-            border-radius: 50%;
-        }    
-        background-color: #f6f6f6;
-        cursor: pointer;
-        padding: 1rem 2rem;
-        border: 1px solid red;
-        flex-grow: 1;
-        border-radius: 1rem;
-        margin-right: 1.5rem;
-        font-weight: 550;
-        @include box-shadow.base-shadow;
-        &:hover {
-            @include zoom.transform-zoom;
-        }    
-    }
-    & i.fas {
-        margin-left: 1rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+      &::before {
+        content: counter(steps);
+        counter-increment: steps;
+        color: white;
+        background-color: colors.$purple;
+        width: 2 * var.$menu-bullet-height;
+        height: 2 * var.$menu-bullet-height;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: -1 * var.$menu-bullet-height;
+        transform: translateY(-50%);
+      }
+      list-style-type: none;
+      background-color: #f6f6f6;
+      padding: 1.5rem 2rem;
+      flex-grow: 1;
+      border-radius: 1rem;
+      @include mixins.box-shadow;
+      &:hover {
+        @include mixins.transform-zoom;
+        background-color: lighten(colors.$purple, 35%);
+        i::before {
+          color: colors.$purple;
+        }
+      }
+      & i.fas {
+        margin-right: 1rem;
+        color: colors.$lightgrey;
         font-size: 1.5rem;
+      }
     }
-
-}
+  }
