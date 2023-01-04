@@ -31,7 +31,7 @@ header {
   justify-content: center;
   gap: 1rem;
   background-color: #f3f3f3;
-  margin: 0 -1rem;
+  margin: 0;
   text-align: center;
   padding: 0.5rem;
 }
@@ -72,12 +72,20 @@ header {
   opacity: 0.9;
 }
 
+main {
+  padding: 0;
+}
+
 .menu {
   counter-reset: steps;
   margin-bottom: 2rem;
 }
+.menu h2 {
+  margin-left: 1.5rem;
+}
 .menu ol {
   display: flex;
+  margin-right: 1rem;
   gap: 2rem;
 }
 @media (max-width: 1000px) {
@@ -89,6 +97,8 @@ header {
   position: relative;
   display: flex;
   align-items: center;
+  font-weight: bold;
+  font-size: 0.9rem;
   list-style-type: none;
   background-color: #f6f6f6;
   padding: 1.5rem 2rem;
@@ -121,27 +131,59 @@ header {
 .menu li i.fas {
   margin-right: 1rem;
   color: #7e7e7e;
-  font-size: 1.5rem;
 }
 
-.restuList {
-  background-color: #f6f6f6;
+.restu-list {
+  display: flex;
+  flex-direction: column;
+  background: #f6f6f6;
+  padding: 0 1rem;
+}
+.restu-list h2 {
+  margin: 2rem 0;
+}
+.restu-list .restu-list__list .restu__card {
+  background: white;
+  margin: 0.5rem auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+.restu-list .restu-list__list .restu__card a {
+  color: black;
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+}
+.restu-list .restu-list__list .restu__card a img {
+  height: 10rem;
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  object-fit: cover;
+  position: relative;
+}
+.restu-list .restu-list__list .restu__card a .restu__card__new-box {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #99e2d0;
+  padding: 0 2rem;
+}
+.restu-list .restu-list__list .restu__card a .restu__card__card-text {
+  padding: 0 1rem;
 }
 
-.restuList__cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-}
-@media (max-width: 1000px) {
-  .restuList__cards {
-    grid-template-columns: repeat(1, 1fr);
+@media (min-width: 1000px) {
+  .restu-list h2 {
+    text-align: center;
   }
-}
-
-.card {
-  border: 1px solid black;
-  height: 4rem;
+  .restu-list .restu-list__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

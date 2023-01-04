@@ -8,54 +8,53 @@
     <script src="https://kit.fontawesome.com/2c9686680f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-
+<body>
 <!---------HEADER--LOGO----------->
+  <header>
+    <h1>OhMyFood</h1>
+  </header>
+  <main>
+    <!---heading AND LocationIcon--->
+    <div class="location">
+      <i class="fa-solid fa-location-dot"></i>
+      <h2>Paris, Belleville</h2>
+    </div>
+    <!----------Explore------------>
+    <section class="explore">
+      <h2>Book the menu you like</h2>
+      <p>Discover top-of-the-art restaurants we     <br>picked  for you</p>
+      <button>Explore our restaurants</button>
+    </section>
 
-<header>
-  <h1>OhMyFood</h1>
-</header>
+    <!----------Menu------------>
+    <section class="menu">
+      <h2>How it works</h2>  
+      <ol>
+        <li><i class="fas fa-mobile-alt"></i> Chose a restaurant</li>
+        <li><i class="fas fa-list-ul"></i> Creat your menu</li>
+        <li><i class="fas fa-store"></i> Go enjoy it at the restaurant</li>
+      </ol>
+    </section>
 
-<main>
-
-<!---heading AND LocationIcon--->
-
-<div class="location">
-  <i class="fa-solid fa-location-dot"></i>
-  <h2>Paris, Belleville</h2>
-</div>
-
-<!----------Explore------------>
-
-<section class="explore">
-  <h2>Book the menu you like</h2>
-  <p>Discover top-of-the-art restaurants we <br>picked  for you</p>
-  <button>Explore our restaurants</button>
-</section>
-
-<!----------Menu------------>
-<section class="menu">
-  <h2>How it works</h2>  
-  <ol>
-    <li><i class="fas fa-mobile-alt"></i> Chose a restaurant</li>
-    <li><i class="fas fa-list-ul"></i> Creat your menu</li>
-    <li><i class="fas fa-store"></i> Go enjoy it at the restaurant</li>
-  </ol>
-</section>
-
-<!-----------Resturants--------------->
-<section class="restuList">
-  <h2>Resturants</h2>
-  <div class="restulist__cards">
-    <a href="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="card new">
-      <div class="img card__ima1"></div>
-      <div class="card__desc">
-        <h3>The Full palette</h3>
-        <p>New York</p>
-      </div>
-    </a>
-  </div>
-</section>
-
-</main>
+    <!-----------Resturants--------------->
+    <section class="restu-list">
+      <h2>Restaurants</h2>
+      <div class="restu-list__list">
+        <article class="restu__card">
+          <a href="#">
+            <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt="The Full Palette Picture">
+            <div class="restu__card__new-box">
+                <p>New</p>
+            </div>
+            <div class="restu__card__card-text">
+              <h3>The Full Palette</h3>
+              <p>New York</p>
+            </div>
+          </a>
+        </article>
+      </div>  
+    </section>  
+  </main>
 </body>
 </html>

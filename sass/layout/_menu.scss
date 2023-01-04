@@ -2,11 +2,19 @@
 @use "../utility/var.scss";
 @use "../utility/colors.scss";
 
+main {
+  padding: 0;
+}
+
 .menu {
+    h2 {
+      margin-left: 1.5rem;
+    }
     counter-reset: steps;
     margin-bottom: 2rem;
     & ol {
       display: flex;
+      margin-right: 1rem;
       gap: 2rem;
       @media (max-width: var.$breakpoint) {
         flex-direction: column;
@@ -16,6 +24,8 @@
       position: relative;
       display: flex;
       align-items: center;
+      font-weight: bold;
+      font-size: 0.9rem;
       &::before {
         content: counter(steps);
         counter-increment: steps;
@@ -47,7 +57,6 @@
       & i.fas {
         margin-right: 1rem;
         color: colors.$lightgrey;
-        font-size: 1.5rem;
       }
     }
   }
