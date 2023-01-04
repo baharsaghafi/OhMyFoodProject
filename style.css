@@ -128,4 +128,20 @@ header {
   background-color: #f6f6f6;
 }
 
+.restuList__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media (max-width: 1000px) {
+  .restuList__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.card {
+  border: 1px solid black;
+  height: 4rem;
+}
+
 /*# sourceMappingURL=style.css.map */
