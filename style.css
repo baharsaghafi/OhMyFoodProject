@@ -206,5 +206,22 @@ main {
     gap: 1rem;
   }
 }
+footer {
+  background-color: #353535;
+  padding: 0.1rem 0 2rem 1.5rem;
+  color: white;
+}
+footer h2 {
+  font-family: "Shrikhand", "sans-serif";
+  font-weight: 500;
+  padding: 0.5rem 0;
+}
+footer p {
+  padding: 0 0.2rem;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
 
 /*# sourceMappingURL=style.css.map */
