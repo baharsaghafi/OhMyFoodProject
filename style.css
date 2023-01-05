@@ -182,7 +182,18 @@ main {
   font-weight: bold;
 }
 .restu-list .restu-list__list .restu__card a .restu__card__card-text {
+  position: relative;
   padding: 0 1rem;
+}
+.restu-list .restu-list__list .restu__card a .restu__card__card-text p {
+  margin-top: -1rem;
+}
+.restu-list .restu-list__list .restu__card a .restu__card__card-text i {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 40%;
+  transform: translateY(-50%);
 }
 
 @media (min-width: 1000px) {

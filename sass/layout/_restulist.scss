@@ -40,18 +40,31 @@
                     height: 1.6rem;
                     width: 5rem;
                     background: colors.$color-tertiary;
-                }
 
-                .restu__card__new-box p {
+                    p {
                     margin: 0.3rem 1.6rem;
                     font-size: small;
                     color:rgb(19, 159, 113);
                     font-weight: bold;
 
                 }
+            }
 
                 .restu__card__card-text{
+                    position: relative;
                     padding: 0 1rem;
+
+                p {
+                    margin-top: -1rem;
+
+                }
+                i {
+                    font-size: 1.5rem;
+                    position: absolute;
+                    right: 1.5rem;
+                    top: 40%;
+                    transform: translateY(-50%);
+                }    
                         
                 }
             }
