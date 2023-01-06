@@ -64,7 +64,7 @@ header {
   transition: transform 200ms;
   margin-top: 1rem;
   cursor: pointer;
-  box-shadow: 2px 1px 8px -3px #7e7e7e;
+  box-shadow: 2px 2px 8px -3px #7e7e7e;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   font-size: 1rem;
 }
@@ -106,7 +106,7 @@ main {
   padding: 1.5rem 2rem;
   flex-grow: 1;
   border-radius: 1rem;
-  box-shadow: 2px 1px 8px -3px #7e7e7e;
+  box-shadow: 2px 2px 8px -3px #7e7e7e;
 }
 .menu li::before {
   content: counter(steps);
@@ -140,14 +140,14 @@ main {
   flex-direction: column;
   background: #f6f6f6;
   margin-top: 4rem;
-  padding: 0 1.5rem 3rem 1.5rem;
+  padding: 0 1rem 3rem 1rem;
 }
 .restu-list h2 {
   margin: 3.5rem 0 1rem 0.5rem;
 }
 .restu-list .restu-list__list .restu__card {
   background: white;
-  margin: 0.5rem auto;
+  margin: 1rem auto;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -179,22 +179,34 @@ main {
 .restu-list .restu-list__list .restu__card a .restu__card__new-box p {
   margin: 0.3rem 1.6rem;
   font-size: small;
-  color: rgb(19, 159, 113);
+  color: rgb(18, 142, 101);
   font-weight: bold;
 }
-.restu-list .restu-list__list .restu__card a .restu__card__card-text {
+.restu-list .restu-list__list .restu__card .restu__card__card-text {
   position: relative;
   padding: 0 1rem;
 }
-.restu-list .restu-list__list .restu__card a .restu__card__card-text p {
+.restu-list .restu-list__list .restu__card .restu__card__card-text p {
   margin-top: -1rem;
 }
-.restu-list .restu-list__list .restu__card a .restu__card__card-text i {
+.restu-list .restu-list__list .restu__card .restu__card__card-text i {
   font-size: 1.5rem;
   position: absolute;
   right: 1.5rem;
   top: 40%;
   transform: translateY(-50%);
+}
+.restu-list .restu-list__list .restu__card .restu__card__card-text .fas {
+  color: transparent;
+  background-image: linear-gradient(red, blue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.restu-list .restu-list__list .restu__card .restu__card__card-text:hover .fas {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.2);
 }
 
 @media (min-width: 1000px) {

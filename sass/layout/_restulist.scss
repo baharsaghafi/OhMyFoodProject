@@ -7,14 +7,14 @@
     flex-direction: column;
     background: colors.$lightergrey;
     margin-top: 4rem;
-    padding: 0 1.5rem 3rem 1.5rem;
+    padding: 0 1rem 3rem 1rem;
     h2{
         margin: 3.5rem 0 1rem 0.5rem;
     }
     .restu-list__list{
         .restu__card{
             background: white;
-            margin: 0.5rem auto;
+            margin: 1rem auto;
             border-radius: 20px;
             display: flex;
             flex-direction: column;
@@ -34,6 +34,7 @@
                     object-fit:cover;
                     position: relative;
                 }
+                
                 .restu__card__new-box{
                     position: absolute;
                     top: 1rem;
@@ -45,11 +46,13 @@
                     p {
                     margin: 0.3rem 1.6rem;
                     font-size: small;
-                    color:rgb(19, 159, 113);
+                    color:rgb(18, 142, 101);
                     font-weight: bold;
 
                 }
             }
+        }
+
 
                 .restu__card__card-text{
                     position: relative;
@@ -65,9 +68,20 @@
                     right: 1.5rem;
                     top: 40%;
                     transform: translateY(-50%);
-                }    
-                        
                 }
+                .fas {
+                    color: transparent;
+                    background-image: linear-gradient(red, blue);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    opacity: 0;
+                    transition: all 200ms ease-in-out;
+                }
+                &:hover .fas {
+                    opacity: 1;
+                    transform:translateY(-50%) scale(1.2); 
+                }                
+
             }
             
         }
