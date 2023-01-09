@@ -71,11 +71,11 @@
                 }
                 .fas {
                     color: transparent;
-                    background-image: linear-gradient(red, blue);
                     background-clip: text;
                     -webkit-background-clip: text;
                     opacity: 0;
                     transition: all 200ms ease-in-out;
+                    @include mixins.gradient(1);
                 }
                 &:hover .fas {
                     opacity: 1;

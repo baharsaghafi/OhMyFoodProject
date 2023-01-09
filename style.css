@@ -63,10 +63,7 @@ header {
   border-radius: 2rem;
   transition: transform 200ms;
   margin-top: 1rem;
-  cursor: pointer;
-  box-shadow: 2px 2px 8px -3px #7e7e7e;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  font-size: 1rem;
 }
 .explore button:hover {
   transform: scale(1.02);
@@ -198,11 +195,11 @@ main {
 }
 .restu-list .restu-list__list .restu__card .restu__card__card-text .fas {
   color: transparent;
-  background-image: linear-gradient(red, blue);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 200ms ease-in-out;
+  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
 }
 .restu-list .restu-list__list .restu__card .restu__card__card-text:hover .fas {
   opacity: 1;
