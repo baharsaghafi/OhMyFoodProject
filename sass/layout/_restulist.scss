@@ -98,7 +98,8 @@
         }
         .restu-list__list{
             display: grid;
-            grid-template-columns: repeat(2,1fr);
+            width: 100%;
+            grid-template-columns: repeat(4,1fr);
             gap: 1rem;
         }
 
