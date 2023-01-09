@@ -132,6 +132,20 @@ main {
   color: #7e7e7e;
 }
 
+@media (min-width: 1000px) {
+  .menu {
+    margin: 2rem;
+  }
+  .menu h2 {
+    font-size: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
+  .menu li {
+    height: 5rem;
+    font-size: 1.2rem;
+  }
+}
 .restu-list {
   display: flex;
   flex-direction: column;
@@ -209,6 +223,7 @@ main {
 @media (min-width: 1000px) {
   .restu-list h2 {
     text-align: center;
+    font-size: 2rem;
   }
   .restu-list .restu-list__list {
     display: grid;
