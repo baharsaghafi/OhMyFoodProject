@@ -23,7 +23,7 @@
     border-radius: 2rem;
     transition: transform 200ms;
     margin-top: 1rem;
-    //@include mixins.base-shadow;
+    @include mixins.box-shadow;
     @include mixins.gradient; 
   }
 

@@ -8,8 +8,9 @@
   );
 }
 @mixin box-shadow {
-  box-shadow: 2px 2px 8px -3px colors.$lightgrey;
+  box-shadow: 2px 3px 10px -3px colors.$lightgrey;
 }
+
 @mixin transform-zoom($zoom-level: 1.02, $transformation: null) {
   transform: $transformation scale($zoom-level);
 }
@@ -41,3 +42,34 @@
       opacity: 0.9;
     }
   }
+
+  @mixin heart($opacity: 1, $font-weight: 400, $color: inherit) {
+  @include font-awesome($font-weight);
+  content: "\f004";
+  font-size: 2rem;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $color;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: $opacity;
+  transition: all 200ms ease-in-out;
+}
+
+@mixin heart-animated {
+  position: relative;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+  &::before {
+    @include heart;
+  }
+  &::after {
+    @include heart($opacity: 0, $font-weight: 900, $color: transparent);
+    @include gradient(1);
+  }
+  &:hover::after {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+  }
+}
