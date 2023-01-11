@@ -12,7 +12,28 @@ body {
 }
 
 main {
-  padding: 0 1rem;
+  padding: 0 7rem;
+}
+@media (max-width: 1000px) {
+  main {
+    padding: 0 1rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 header {
@@ -253,19 +274,24 @@ footer a {
   color: white;
 }
 
-img {
-  max-width: 100%;
+.banner img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  object-position: center;
 }
 
 .restu_main {
-  padding: 0 1rem;
+  margin-top: -3rem;
 }
 .restu_main h2 {
   font-family: "Shrikhand", "sans-serif";
-  width: 100%;
+  padding: 2rem 1rem;
   position: relative;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
+  border-radius: 2rem 2rem 0 0;
 }
 .restu_main h2::before {
   display: inline-block;
