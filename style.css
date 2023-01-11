@@ -257,12 +257,17 @@ img {
   max-width: 100%;
 }
 
-main h2 {
+.restu_main {
+  padding: 0 1rem;
+}
+.restu_main h2 {
+  font-family: "Shrikhand", "sans-serif";
+  width: 100%;
   position: relative;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
 }
-main h2::before {
+.restu_main h2::before {
   display: inline-block;
   position: absolute;
   font-style: normal;
@@ -282,7 +287,7 @@ main h2::before {
   opacity: 1;
   transition: all 200ms ease-in-out;
 }
-main h2::after {
+.restu_main h2::after {
   display: inline-block;
   position: absolute;
   font-style: normal;
@@ -303,7 +308,7 @@ main h2::after {
   transition: all 200ms ease-in-out;
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
 }
-main h2:hover::after {
+.restu_main h2:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.1);
 }

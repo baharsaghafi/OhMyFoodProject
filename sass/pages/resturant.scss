@@ -1,9 +1,15 @@
 @use "../utility/mixins";
+@use "../utility/colors";
 
 img {
     max-width: 100%;
-}
+} 
 
-main h2 {
-   @include mixins.heart-animated;
+.restu_main {
+    padding: 0 1rem;
+    h2 {
+      font-family: "Shrikhand", "sans-serif";
+      width: 100%;
+      @include mixins.heart-animated;
+    }
 }
