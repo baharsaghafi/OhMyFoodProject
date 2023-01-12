@@ -282,10 +282,10 @@ footer a {
   object-position: center;
 }
 
-.restu_main {
+.restu__title {
   margin-top: -3rem;
 }
-.restu_main h2 {
+.restu__title h2 {
   font-family: "Shrikhand", "sans-serif";
   padding: 2rem 1rem;
   position: relative;
@@ -293,7 +293,7 @@ footer a {
   border-radius: 0 0 1rem 1rem;
   border-radius: 2rem 2rem 0 0;
 }
-.restu_main h2::before {
+.restu__title h2::before {
   display: inline-block;
   position: absolute;
   font-style: normal;
@@ -313,7 +313,7 @@ footer a {
   opacity: 1;
   transition: all 200ms ease-in-out;
 }
-.restu_main h2::after {
+.restu__title h2::after {
   display: inline-block;
   position: absolute;
   font-style: normal;
@@ -334,7 +334,7 @@ footer a {
   transition: all 200ms ease-in-out;
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
 }
-.restu_main h2:hover::after {
+.restu__title h2:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.1);
 }

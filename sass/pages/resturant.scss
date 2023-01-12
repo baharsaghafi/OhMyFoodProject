@@ -9,7 +9,7 @@
     object-position: center;
 } 
 
-.restu_main {
+.restu__title {
     margin-top: -3rem;
     h2 {
       font-family: "Shrikhand", "sans-serif";
@@ -17,4 +17,8 @@
       @include mixins.heart-animated;
       border-radius: 2rem 2rem 0 0;
     }
+}
+
+.menupages {
+
 }
