@@ -2,7 +2,8 @@
 @use "../utility/var.scss";
 @use "../utility/colors.scss";
 
-.restu-list{
+#homepage {
+ .restu-list{
     display: flex;
     flex-direction: column;
     background: colors.$lightergrey;
@@ -87,7 +88,7 @@
         }
     }
 }
-
+}
 
 
 @media (min-width: var.$desktop ) {

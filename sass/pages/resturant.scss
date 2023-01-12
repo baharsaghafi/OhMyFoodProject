@@ -2,7 +2,12 @@
 @use "../utility/colors";
 @use "../utility/var";
 
-.banner img {
+body {
+  background-color: colors.$lightergrey;
+}
+
+#restu-page {
+ .banner img {
     display: block;
     width: 100%;
     height: 20rem;
@@ -10,29 +15,58 @@
     object-position: center;
 } 
 
-.restu__title {
+ .restu__title {
     margin-top: -3rem;
     h2 {
       font-family: "Shrikhand", "sans-serif";
       padding: 2rem 1rem;
       @include mixins.heart-animated;
       border-radius: 2rem 2rem 0 0;
+      background-color: colors.$lightergrey;
     }
 }
 
-.menu-grid {
-  background-color: yellow; 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  @media (max-width: var.$desktop) {
-    grid-template-columns: 1fr;
-  }
-  & > * {
-    border: 1px solid red;
-  }
-}
-
-.restu__main {
+ .restu__main {
   padding: 0 1rem;
  
 }
+
+ .menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  @media (max-width: var.$desktop) {
+    grid-template-columns: 1fr;
+  }
+
+  .menus__category {
+    background-color: white ; 
+    .menu-item {
+      display: flex;
+      padding: 1rem;
+      .menu-item__price {
+        margin-left: auto;
+        font-weight: 900;
+        padding: 1rem;
+        display: flex;
+        align-items: flex-end;
+        
+      }
+
+      .menu-item__discription {
+        padding: 1rem;
+      }
+
+      .menu-item__check {
+        $button-width: 3rem;
+        background-color: colors.$color-tertiary;
+        margin-right: -3rem;
+        width: $button-width;
+
+      }
+    }
+
+  }
+ }
+} 
