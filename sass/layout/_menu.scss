@@ -17,7 +17,7 @@ main {
       display: flex;
       margin-right: 1rem;
       gap: 2rem;
-      @media (max-width: var.$breakpoint) {
+      @media (max-width: var.$desktop) {
         flex-direction: column;
       }
     }
@@ -62,7 +62,7 @@ main {
     }
   }
 
-  @media (min-width: var.$breakpoint ) {
+  @media (min-width: var.$desktop ) {
     .menu{
       margin: 2rem;
         h2{

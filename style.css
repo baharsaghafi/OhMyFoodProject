@@ -20,17 +20,6 @@ main {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  padding: 0;
-  margin: 0;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -337,6 +326,24 @@ footer a {
 .restu__title h2:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.1);
+}
+
+.menu-grid {
+  background-color: yellow;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 1000px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.menu-grid > * {
+  border: 1px solid red;
+}
+
+.restu__main {
+  padding: 0 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,6 @@
 @use "../utility/mixins";
 @use "../utility/colors";
+@use "../utility/var";
 
 .banner img {
     display: block;
@@ -19,6 +20,19 @@
     }
 }
 
-.menupages {
+.menu-grid {
+  background-color: yellow; 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  @media (max-width: var.$desktop) {
+    grid-template-columns: 1fr;
+  }
+  & > * {
+    border: 1px solid red;
+  }
+}
 
+.restu__main {
+  padding: 0 1rem;
+ 
 }
