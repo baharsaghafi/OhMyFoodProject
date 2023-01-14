@@ -15,14 +15,7 @@
     color: colors.$lightgrey;
   }
   & button {
-    color: white;
-    font-weight: 300;
-    font-size: 1rem;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 2rem;
-    transition: transform 200ms;
-    margin-top: 1rem;
+    @include mixins.base-button;
     @include mixins.box-shadow;
     @include mixins.gradient; 
   }
