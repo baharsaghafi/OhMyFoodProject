@@ -94,17 +94,20 @@ main {
 }
 
 .menu {
+  background-color: white;
   counter-reset: steps;
   margin-bottom: 2rem;
 }
 .menu h2 {
   margin-left: 1.5rem;
   margin-top: 3rem;
+  padding-top: 2rem;
 }
 .menu ol {
   display: flex;
   margin-right: 1rem;
   gap: 2rem;
+  padding-bottom: 5rem;
 }
 @media (max-width: 1000px) {
   .menu ol {
@@ -162,18 +165,18 @@ main {
   }
   .menu li {
     height: 5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 #homepage .restu-list {
   display: flex;
   flex-direction: column;
   background: #f6f6f6;
-  margin-top: 4rem;
+  margin-top: 2rem;
   padding: 0 1rem 3rem 1rem;
 }
 #homepage .restu-list h2 {
-  margin: 3.5rem 0 1rem 0.5rem;
+  margin: 1rem 0 1rem 0.5rem;
 }
 #homepage .restu-list .restu-list__list .restu__card {
   background: white;

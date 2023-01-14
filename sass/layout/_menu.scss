@@ -7,9 +7,11 @@ main {
 }
 
 .menu {
+  background-color: white;
     h2 {
       margin-left: 1.5rem;
       margin-top: 3rem;
+      padding-top: 2rem;
     }
     counter-reset: steps;
     margin-bottom: 2rem;
@@ -17,6 +19,7 @@ main {
       display: flex;
       margin-right: 1rem;
       gap: 2rem;
+      padding-bottom: 5rem;
       @media (max-width: var.$desktop) {
         flex-direction: column;
       }
@@ -72,7 +75,7 @@ main {
         }
         & li{
             height: 5rem;
-            font-size: 1.2rem;
+            font-size: 1rem;
 
         }
 
