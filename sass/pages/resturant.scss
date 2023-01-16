@@ -9,17 +9,12 @@ body {
 
 #restu-page {
   header {
-    &:hover::before {
-      @include mixins.transform-zoom($zoom-level: 1.2, $transformation: translateY(-50%));
-    }
-    &::before {
-      @include mixins.font-awesome($font-weight: 900);
-      content: "\f060";
+    .fa-solid{
+      position:absolute;
+      cursor: pointer;
       left: 1rem;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 40%;
       font-size: 20px;
-      transition: transform 200ms;
     }
   }
 

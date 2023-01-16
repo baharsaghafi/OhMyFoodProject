@@ -277,24 +277,12 @@ body {
   background-color: #f6f6f6;
 }
 
-#restu-page header:hover::before {
-  transform: translateY(-50%) scale(1.2);
-}
-#restu-page header::before {
-  display: inline-block;
+#restu-page header .fa-solid {
   position: absolute;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f060";
+  cursor: pointer;
   left: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 40%;
   font-size: 20px;
-  transition: transform 200ms;
 }
 #restu-page .banner img {
   display: block;
