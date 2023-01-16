@@ -91,21 +91,6 @@
 }
 
 
-@media (min-width: var.$desktop ) {
-    .restu-list{
-        h2{
-            text-align: center;
-            font-size: 2rem;
-        }
-        .restu-list__list{
-            display: grid;
-            width: 100%;
-            grid-template-columns: repeat(4,1fr);
-            gap: 1rem;
-        }
-
-    }
-}
 
 @media (min-width: var.$tablet ) {
     .restu-list{
@@ -117,6 +102,23 @@
             display: grid;
             width: 100%;
             grid-template-columns: repeat(2,1fr);
+            gap: 1rem;
+        }
+
+    }
+}
+
+
+@media only screen and (min-width: var.$desktop ) {
+    .restu-list{
+        h2{
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .restu-list__list{
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(4,1fr);
             gap: 1rem;
         }
 
