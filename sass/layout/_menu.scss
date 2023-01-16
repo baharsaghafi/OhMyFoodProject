@@ -81,3 +81,21 @@ main {
 
     }
 }
+
+@media (min-width: var.$tablet ) {
+  .menu{
+    margin: 0rem;
+      h2{
+        font-size: 2rem;
+        padding-top: 1rem;
+        text-align: center;
+      }
+      & li{
+        margin: 0.5rem 5rem;
+        height: 5rem;
+        font-size: 1rem;
+
+      }
+
+  }
+}

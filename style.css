@@ -168,6 +168,21 @@ main {
     font-size: 1rem;
   }
 }
+@media (min-width: 768px) {
+  .menu {
+    margin: 0rem;
+  }
+  .menu h2 {
+    font-size: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
+  .menu li {
+    margin: 0.5rem 5rem;
+    height: 5rem;
+    font-size: 1rem;
+  }
+}
 #homepage .restu-list {
   display: flex;
   flex-direction: column;
@@ -252,6 +267,18 @@ main {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .restu-list h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .restu-list .restu-list__list {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
 }
