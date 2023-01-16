@@ -48,14 +48,14 @@
   @include font-awesome($font-weight);
   content: "\f004";
   font-size: 2rem;
-  right: 1rem;
+  right: 2rem;
   top: 50%;
   transform: translateY(-50%);
   color: $color;
   background-clip: text;
   -webkit-background-clip: text;
   opacity: $opacity;
-  transition: all 200ms ease-in-out;
+  transition: all 700ms ease-in-out;
 }
 
 @mixin heart-animated {

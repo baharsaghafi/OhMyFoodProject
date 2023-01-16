@@ -235,7 +235,7 @@ main {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  transition: all 200ms ease-in-out;
+  transition: all 700ms ease-in-out;
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
 }
 #homepage .restu-list .restu-list__list .restu__card .restu__card__card-text:hover .fas {
@@ -292,7 +292,7 @@ body {
   object-position: center;
 }
 #restu-page .restu__title {
-  margin-top: -2rem;
+  margin-top: -6rem;
 }
 #restu-page .restu__title h2 {
   font-family: "Shrikhand", "cursive";
@@ -314,14 +314,14 @@ body {
   font-weight: 400;
   content: "\f004";
   font-size: 2rem;
-  right: 1rem;
+  right: 2rem;
   top: 50%;
   transform: translateY(-50%);
   color: inherit;
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
-  transition: all 200ms ease-in-out;
+  transition: all 700ms ease-in-out;
 }
 #restu-page .restu__title h2::after {
   display: inline-block;
@@ -334,14 +334,14 @@ body {
   font-weight: 900;
   content: "\f004";
   font-size: 2rem;
-  right: 1rem;
+  right: 2rem;
   top: 50%;
   transform: translateY(-50%);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  transition: all 200ms ease-in-out;
+  transition: all 700ms ease-in-out;
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
 }
 #restu-page .restu__title h2:hover::after {

@@ -75,7 +75,7 @@
                     background-clip: text;
                     -webkit-background-clip: text;
                     opacity: 0;
-                    transition: all 200ms ease-in-out;
+                    transition: all 700ms ease-in-out;
                     @include mixins.gradient(1);
                 }
                 &:hover .fas {
