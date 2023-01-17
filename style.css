@@ -462,11 +462,11 @@ body {
   margin-right: 0;
 }
 #restu-page .menu-grid .menus__category .menu-item:hover i {
-  animation: quarterspin 0.5s ease-in-out;
+  animation: tickmark 0.5s ease-in-out;
 }
-@keyframes quarterspin {
+@keyframes tickmark {
   0% {
-    transform: rotate(-270deg);
+    transform: rotate(-300deg);
   }
   100% {
     transform: rotate(0);
