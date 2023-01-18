@@ -119,8 +119,9 @@ header {
   opacity: 0.9;
 }
 .explore button:hover {
-  transform: scale(1.02);
-  opacity: 0.9;
+  transform: scale(1.01);
+  opacity: 0.8;
+  color: black;
 }
 
 main {
