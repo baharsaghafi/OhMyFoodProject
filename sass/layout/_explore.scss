@@ -25,3 +25,13 @@
     opacity: 0.9;
   }
 }
+
+.loader {
+  position: fixed;
+  background-color: #ffff;
+  height: 100vh;
+  z-index: 1;
+  opacity: 0.9;
+  animation: disappear;
+}
+
