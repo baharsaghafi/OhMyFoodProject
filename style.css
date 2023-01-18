@@ -301,7 +301,7 @@ footer a {
   color: white;
 }
 
-@keyframes appear {
+@keyframes loading-page {
   0% {
     transform: translateY(50%);
     opacity: 0;
