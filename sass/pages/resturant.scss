@@ -66,15 +66,22 @@ body {
       overflow: hidden;
 
       .menu-item {
-        height: 5.2rem;
         $numberOfItems: 3;
+        @for $i from 1 through $numberOfItems {
+          &:nth-child(#{$i}) {
+            animation-delay: 100ms * $i;
+          }
+        }      
+        height: 5.2rem;
         display: flex;
         background-color: white;
         border-radius: 1rem;
         overflow: hidden;
         margin: 1rem 0.2rem;
         @include mixins.box-shadow;
-        animation: loading-page 1s;
+        animation: loading-page;
+        animation-duration: 2s;
+        animation-delay: 1s;
         animation-fill-mode: both;
 
         .menu-item__price {
