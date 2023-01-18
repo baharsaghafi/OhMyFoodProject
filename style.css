@@ -425,7 +425,7 @@ body {
   overflow: hidden;
   margin: 1rem 0.2rem;
   box-shadow: 2px 3px 10px -3px #7e7e7e;
-  animation: appear 1s;
+  animation: loading-page 1s;
   animation-fill-mode: both;
 }
 #restu-page .menu-grid .menus__category .menu-item .menu-item__price {
