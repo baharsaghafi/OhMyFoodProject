@@ -360,7 +360,7 @@ body {
 #restu-page .banner img {
   display: block;
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   object-fit: cover;
   object-position: center;
 }
