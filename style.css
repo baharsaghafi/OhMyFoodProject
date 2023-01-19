@@ -374,6 +374,7 @@ body {
   position: relative;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
+  cursor: pointer;
   border-radius: 2rem 2rem 0 0;
   background-color: #f6f6f6;
 }
