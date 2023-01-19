@@ -30,6 +30,7 @@ main {
       align-items: center;
       font-weight: bold;
       font-size: 0.9rem;
+      cursor: pointer;
       &::before {
         content: counter(steps);
         counter-increment: steps;
