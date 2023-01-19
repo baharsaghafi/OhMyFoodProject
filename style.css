@@ -342,7 +342,6 @@ footer a {
     opacity: 0;
   }
   100% {
-    transform: translatY(0);
     opacity: 1;
   }
 }
