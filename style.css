@@ -280,6 +280,7 @@ main {
   right: 1.5rem;
   top: 40%;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 #homepage .restu-list .restu-list__list .restu__card .restu__card__card-text .fas {
   color: transparent;
