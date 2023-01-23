@@ -67,8 +67,8 @@ body {
       overflow: hidden;
 
       .menu-item {
-        $numberOfItems: 3;
-        @for $i from 1 through $numberOfItems {
+        $itemNum: 3;
+        @for $i from 1 through $itemNum {
           &:nth-child(#{$i}) {
             animation-delay: 100ms * $i;
           }
