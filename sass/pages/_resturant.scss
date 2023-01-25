@@ -131,7 +131,7 @@ body {
           }
           i {
             @include animations.tickmark;
-            animation: tickmark 0.5s ease-in-out;
+            animation: tickmark 0.4s ease-in-out;
           }
         }
       }
